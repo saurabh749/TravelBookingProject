@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>City</title>
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+</head>
+<body style="background-color:Green";>
+	<h3 class="style1">Travel Booking Website</h3>
+	<form th:action="@{/first}" th:object="${city}" method="post" class="style1">
+
+		<table border="0" width="70%" align="center">
+		 <tr>
+				<td id="res">Id</td>
+				<td><input type="text" th:field="*{cityid}" />
+			</tr>
+		   <tr>
+				<td id="res">City From</td>
+				<td><input type="text" th:field="*{cityfrom}" />
+			</tr>
+			<tr>
+				<td id="res">To City</td>
+				<td><input type="text" th:field="*{tocity}" />
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">Submit</button>
+				</td>
+
+			</tr>
+			</table>
+
+	</form>
+</body>
+</html>
