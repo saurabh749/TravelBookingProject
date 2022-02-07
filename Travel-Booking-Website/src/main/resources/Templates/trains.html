@@ -5,6 +5,7 @@
 <title>Train</title>
 </head>
 <body style="background-color:beige";>
+<form th:action="@{/seat}" method="post">
 <h1 align="center">List Of Trains</h1>
 <table border="1" align="center" style="background-color:cornsilk";>
 <thead>
@@ -24,10 +25,10 @@
 <td th:text="${tr.start_time}"/>
 <td th:text="${tr.end_time}"/>
 <td th:text="${tr.total_seats}"/>
-<td><button type="button">Book Seats</button></td>
-
+<td><button type="submit">Book Seats</button></td>
 </tr>
 </tbody>
 </table>
+</form>
 </body>
 </html>

@@ -40,5 +40,12 @@ public class TravelController {
 		m.addObject("Train",details);
 		return m;
 	}
+	
+	
+	@RequestMapping("/seat")
+	public ModelAndView bookingSeat() {
+		ModelAndView m=new ModelAndView("index");
+		return m;
+	}
 
 }
